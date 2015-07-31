@@ -1,0 +1,20 @@
+[
+{
+    "modid": "testeroni",
+    "name": "Testeroni",
+    "description": "Adds random, poorly-coded items.",
+    "version": "1.0",
+    "mcversion": "1.7.10",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [ "Rastafaria" ],
+    "credits": "Gooby",
+    "logoFile": "",
+    "screenshots": [ "" ],
+    "parent": "",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "useDependencyInformation": true
+}
+]
