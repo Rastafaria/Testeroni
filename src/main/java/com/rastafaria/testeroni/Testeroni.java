@@ -1,16 +1,17 @@
 package com.rastafaria.testeroni;
 
 import com.rastafaria.testeroni.proxy.IProxy;
+import com.rastafaria.testeroni.reference.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = "testeroni", name = "Testeroni", version = "1.7.10-1.0")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class Testeroni
 {
-    @Mod.Instance("Testeroni")
+    @Mod.Instance(Reference.MOD_ID)
     public static Testeroni instance;
 
     @SidedProxy(clientSide = "com.rastafaria.testeroni.proxy.ClientProxy", serverSide = "com.rastafaria.testeroni.proxy.ServerProxy")
