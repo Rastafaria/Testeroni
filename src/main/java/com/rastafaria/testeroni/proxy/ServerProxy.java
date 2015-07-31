@@ -1,4 +1,4 @@
 package com.rastafaria.testeroni.proxy;
 
-public class ServerProxy {
+public class ServerProxy extends CommonProxy {
 }
