@@ -1,6 +1,7 @@
 package com.rastafaria.testeroni;
 
 import com.rastafaria.testeroni.handler.ConfigurationHandler;
+import com.rastafaria.testeroni.init.ModBlocks;
 import com.rastafaria.testeroni.init.ModItems;
 import com.rastafaria.testeroni.proxy.IProxy;
 import com.rastafaria.testeroni.reference.Reference;
@@ -25,7 +26,9 @@ public class Testeroni
     public void PreInitialization(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
         ModItems.init();
+        ModBlocks.init();
     }
 
     @Mod.EventHandler

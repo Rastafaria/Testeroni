@@ -1,5 +1,6 @@
 package com.rastafaria.testeroni.item;
 
+import com.rastafaria.testeroni.creativetab.CreativeTabTesteroni;
 import com.rastafaria.testeroni.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -11,6 +12,7 @@ public class ItemTesteroni extends Item {
 
     public ItemTesteroni() {
         super();
+        this.setCreativeTab(CreativeTabTesteroni.TESTERONI_TAB);
     }
 
     @Override
