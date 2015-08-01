@@ -1,5 +1,6 @@
 package com.rastafaria.testeroni;
 
+import com.rastafaria.testeroni.configuration.ConfigurationHandler;
 import com.rastafaria.testeroni.proxy.IProxy;
 import com.rastafaria.testeroni.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -19,7 +20,7 @@ public class Testeroni
 
     @Mod.EventHandler
     public void PreInitialization(FMLPreInitializationEvent event) {
-
+        ConfigurationHandler.init(event.getSuggestedConfigurationFile());
     }
 
     @Mod.EventHandler
